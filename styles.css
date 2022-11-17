@@ -1,3 +1,9 @@
+:root {
+    --text-shadow-size: 1px;
+    --text-shadow-size-neg: -1px;
+    --text-shadow-color: #000000;
+}
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
@@ -5,8 +11,52 @@
 
 * {
     font-family: 'Bebas Neue';
+    letter-spacing: 1.2px;
+}
+
+body {
+    background-image: url('img/cherry-coke-diamonds.png');
 }
 
 h1 {
-    font-size: 1.0em;
+    color: #FFF;
+    font-size: 4.0em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 300px;
+    border: 10px solid #000000;
+}
+
+#bio {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.text-shadow {
+    text-shadow:
+        var(--text-shadow-size-neg) var(--text-shadow-size-neg) 0 var(--text-shadow-color),
+        0 var(--text-shadow-size-neg) 0 var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size-neg) 0 var(--text-shadow-color),
+        var(--text-shadow-size) 0 0 var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size) 0 var(--text-shadow-color),
+        0 var(--text-shadow-size) 0 var(--text-shadow-color),
+        var(--text-shadow-size-neg) var(--text-shadow-size) 0 var(--text-shadow-color),
+        var(--text-shadow-size-neg) 0 0 var(--text-shadow-color);
+}
+
+.smallcaps {
+    font-variant: small-caps;
 }
