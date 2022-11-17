@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Bebas Neue';
+}
+
+h1 {
+    font-size: 1.0em;
+}
