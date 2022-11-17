@@ -1,0 +1,9 @@
+{
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never",
+    "editor.suggestOnTriggerCharacters": false,
+    "html.completion.attributeDefaultValue": "empty",
+    "html.autoClosingTags": false
+}

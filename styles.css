@@ -1,6 +1,8 @@
 :root {
     --text-shadow-size: 1px;
     --text-shadow-size-neg: -1px;
+    --text-shadow-blur: 2px;
+    --text-shadow-blur-big: 10px;
     --text-shadow-color: #000000;
 }
 
@@ -16,6 +18,27 @@
 
 body {
     background-image: url('img/cherry-coke-diamonds.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    font-size: 0.69em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer a:link, footer a:visited {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration-style: underline;
+}
+
+footer a:active, footer a:hover {
+    color: #000000;
+    text-decoration-style: none;
 }
 
 h1 {
@@ -26,18 +49,53 @@ h1 {
     margin-bottom: 15px;
 }
 
+#bio {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2em;
+    text-align: center;
+}
+
 #profile-picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 300px;
     border: 10px solid #000000;
 }
 
-#bio {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2em;
+.horizontal-flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.links-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 560px;
+    overflow: hidden;
+}
+
+.links-box img {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 119px;
+}
+
+.links-header {
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    padding: 3px;
     text-align: center;
 }
 
@@ -45,18 +103,30 @@ h1 {
     border-radius: 50%;
 }
 
-.text-shadow {
-    text-shadow:
-        var(--text-shadow-size-neg) var(--text-shadow-size-neg) 0 var(--text-shadow-color),
-        0 var(--text-shadow-size-neg) 0 var(--text-shadow-color),
-        var(--text-shadow-size) var(--text-shadow-size-neg) 0 var(--text-shadow-color),
-        var(--text-shadow-size) 0 0 var(--text-shadow-color),
-        var(--text-shadow-size) var(--text-shadow-size) 0 var(--text-shadow-color),
-        0 var(--text-shadow-size) 0 var(--text-shadow-color),
-        var(--text-shadow-size-neg) var(--text-shadow-size) 0 var(--text-shadow-color),
-        var(--text-shadow-size-neg) 0 0 var(--text-shadow-color);
-}
-
 .smallcaps {
     font-variant: small-caps;
+}
+
+.text-shadow {
+    text-shadow:
+        var(--text-shadow-size-neg) var(--text-shadow-size-neg) var(--text-shadow-blur) var(--text-shadow-color),
+        0 var(--text-shadow-size-neg) var(--text-shadow-blur) var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size-neg) var(--text-shadow-blur) var(--text-shadow-color),
+        var(--text-shadow-size) 0 var(--text-shadow-blur) var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size) var(--text-shadow-blur) var(--text-shadow-color),
+        0 var(--text-shadow-size) var(--text-shadow-blur) var(--text-shadow-color),
+        var(--text-shadow-size-neg) var(--text-shadow-size) var(--text-shadow-blur) var(--text-shadow-color),
+        var(--text-shadow-size-neg) 0 var(--text-shadow-blur) var(--text-shadow-color);
+}
+
+.text-shadow-big {
+    text-shadow:
+        var(--text-shadow-size-neg) var(--text-shadow-size-neg) var(--text-shadow-blur-big) var(--text-shadow-color),
+        0 var(--text-shadow-size-neg) var(--text-shadow-blur-big) var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size-neg) var(--text-shadow-blur-big) var(--text-shadow-color),
+        var(--text-shadow-size) 0 var(--text-shadow-blur-big) var(--text-shadow-color),
+        var(--text-shadow-size) var(--text-shadow-size) var(--text-shadow-blur-big) var(--text-shadow-color),
+        0 var(--text-shadow-size) var(--text-shadow-blur-big) var(--text-shadow-color),
+        var(--text-shadow-size-neg) var(--text-shadow-size) var(--text-shadow-blur-big) var(--text-shadow-color),
+        var(--text-shadow-size-neg) 0 var(--text-shadow-blur-big) var(--text-shadow-color);
 }
