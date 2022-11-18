@@ -64,6 +64,59 @@ h1 {
     border: 10px solid #000000;
 }
 
+#pfp-carousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 594px;
+    height: 388px;
+    border: 0px solid yellow;
+    position: relative;
+}
+
+#pfp-carousel-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#pfp-carousel-center {
+    position: absolute;
+    left: 144px;
+    top: 49px;
+    width: 315px;
+    height: 315px;
+    z-index: 1;
+    border: 0px solid blue;
+    clip-path: polygon(6% 0%, 94% 0%, 100% 6%, 100% 94%, 94% 100%, 6% 100%, 0% 94%, 0% 6%);
+}
+
+#pfp-carousel-center img {
+    max-width: 314px;
+    max-height: 314px;
+}
+
+#pfp-carousel-left, #pfp-carousel-right {
+    position: absolute;
+    width: 254px;
+    height: 254px;
+    top: 79px;
+    z-index: 0;
+    clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 94% 100%, 8% 100%, 0% 92%, 0% 8%);
+}
+
+#pfp-carousel-left {
+    left: 48px;
+}
+
+#pfp-carousel-right {
+    right: 40px;
+}
+
+#pfp-carousel-left img, #pfp-carousel-right img {
+    max-height: 254px;
+}
+
 .horizontal-flip {
     transform: scaleX(-1);
 }
@@ -96,6 +149,10 @@ h1 {
     margin-bottom: 5px;
     padding: 3px;
     text-align: center;
+}
+
+.red {
+    color: rgba(202, 10, 10, 0.6);
 }
 
 .rounded {
